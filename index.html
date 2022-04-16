@@ -76,6 +76,25 @@
         .navigation .link-active{
             font-weight: bold;
         }
+        .hero{
+            padding: 2rem;
+
+
+        }
+        .hero .hero-img{
+            max-width: 350px;
+            display: block;
+            text-align: center;
+            margin: auto;
+        }
+        .hero .hero-heading{
+            font-size: x-large;
+            color: rgb(170, 121, 121);
+            padding-top: 1rem;
+        }
+        .hero .hero-heading .heading-inverted{
+            color: rgb(170, 121, 121);
+        }
 
 
     </style>
@@ -83,6 +102,8 @@
 <body>
     <h1 id="lib-header">Welcome to Wasim Saifi's component library</h1>
     <h2>@typography</h2>
+    <hr>
+    
 
     <h1>this is the biggest heading</h1>
     <h2>this is the second biggest heading</h2>
@@ -129,10 +150,10 @@
           </ul>
       </nav>
       <hr>
-      <h2>header</h2>
-      <header>
-          <img src="undraw_laravel_and_vue_-59-tp.svg" alt="">
-          <h1>heading inside hero</h1>
+      <h2>@header</h2>
+      <header class="hero">
+          <img class="hero-img" src="undraw_laravel_and_vue_-59-tp.svg" alt="">
+          <h1 class="hero-heading">Wasim Saifi: <span class="heading-inverted">developer</span> </h1>
       </header>
       
       <hr>
