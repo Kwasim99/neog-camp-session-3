@@ -5,25 +5,185 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            color: red;
+        }
+        h1{
+            color: blue;
+        }
+        h2{
+            color: green;
+        }
+        #lib-header{
+            color: gray;
+        }
+        .para{
+            color: pink;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        .container{
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .container-center{
+            max-width: 600px;
+            margin: auto;
+
+        }
+        .container-fluid{
+
+        }
+        :root{
+            --primary-color:red
+        }
+        .link-secondary {
+            background-color: var(primary-color);
+        }
+        .link{
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        .link-primary{
+            color: var(primary-color);
+            border-radius: 0.5rem;
+            border: 1px solid var(--primary-color);
+
+        }
+        .list-non-bullet{
+            list-style: none;
+        }
+        .list-item-inline{
+            display: inline;
+            padding: 0rem 0.5rem;
+        
+        }
+        .navigation{
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            border-bottom-left-radius: 1rem;
+        }
+        .navigation.link{
+            color: white;
+
+        }
+        .navigation .nav-brand{
+            font-weight: bold;
+        }
+        .navigation .link-active{
+            font-weight: bold;
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>Welcome to Wasim Saifi's component library</h1>
+    <h1 id="lib-header">Welcome to Wasim Saifi's component library</h1>
     <h2>@typography</h2>
 
     <h1>this is the biggest heading</h1>
     <h2>this is the second biggest heading</h2>
 
-    <p>I am making a library which would hold all of my library.</p>
+    <p class="para">I am making a library which would hold all of my library.</p>
     <hr>
     <h2>@container</h2>
-    <div>this is a fluid container and it will go till the end of the page.</div>
-    <h2>@container</h2>
-    <div>this is a fluid container and it will go till the end of the page.</div>
+    <div class="container-fluid">this is a fluid container and it will go till the end of the page.</div>
+    <h2>@container-center</h2>
+    <div class="container-center">this is a centered container and it will go till the end of the page.</div>
     
     <hr>
     
     <h2>@links</h2>
     <a href="http://google.com">Primary link</a>
     <a href="http://google.com">secondary link</a>
+    <hr>
+    <div>
+        here's my list
+        <h2> list</h2>
+        <h3>unordered list</h3>
+        <p>this list will not have bullets</p>
+
+        <ul class="non-bullet">
+            <li>item one</li>
+            <li>item two</li>
+            <li>item three</li>
+            <li>item four</li>
+      </ul >
+      <ul class="list-non-bullet">
+          <li class="list-item-inline">inline item one</li>
+          <li class="list-item-inline">inline item two</li>
+          <li class="list-item-inline">inline item three</li>
+      </ul>
+      <h2>@nav</h2>
+      <nav class="navigation container">
+          <div class="nav-brand">I am brand</div>
+          <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline"><a class="link link-active" href="">home</a></li>
+              <li class="list-item-inline">
+                  <a class="link" href="">products</a>
+              </li>
+              <li class="list-item-inline"><a class="link" href="">about</a></li>
+          </ul>
+      </nav>
+      <hr>
+      <h2>header</h2>
+      <header>
+          <img src="undraw_laravel_and_vue_-59-tp.svg" alt="">
+          <h1>heading inside hero</h1>
+      </header>
+      
+      <hr>
+      
+      <section>
+        <h2>section</h2>
+        <h3>@white section</h3>
+        <P>this will have white background</P>
+
+
+
+      </section>
+      <section>
+        <h2>section</h2>
+        <h3>@off section</h3>
+        <P>this will have gray background</P>
+
+
+
+      </section>
+      <footer>
+          <div>some small heading inside footer</div>
+      </footer>
+      <ul>
+          <li>social one</li>
+          <li>social two</li>
+          <li>social three</li>
+      </ul>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
