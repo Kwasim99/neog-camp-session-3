@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>home for Wasim Saifi</title>
     <style>
         body{
             color: red;
@@ -91,6 +91,7 @@
             font-size: x-large;
             color: rgb(170, 121, 121);
             padding-top: 1rem;
+            text-align: center;
         }
         .hero .hero-heading .heading-inverted{
             color: rgb(214, 42, 42);
@@ -99,127 +100,71 @@
         text-align: center;
             padding: 2rem;
         }
-        .section ow{
+        .sections{
             background-color: rgb(248, 240, 227);
             text-align: center;
         }
+        .footer{
+            background-color: darkgray;
+            padding: 2rem 1rem;
+            text-align: center;
+            color: white;
+        border-top-right-radius: 1rem;
+        }
+        .footer .footer-header{
+            font-weight: bold;
+            font-size: large;
+        }
+        .footer .link{
 
-
+            color: aliceblue;
+        }
     </style>
 </head>
 <body>
-    <h1 id="lib-header">Welcome to Wasim Saifi's component library</h1>
-    <h2>@typography</h2>
-    <hr>
+    <nav class="navigation container">
+        <div class="nav-brand">Wasim Saifi</div>
+        <ul class="list-non-bullet nav-pills">
+          <li class="list-item-inline"><a class="link link-active" href="">home</a></li>
+            <li class="list-item-inline">
+                <a class="link" href="">projects</a>
+            </li>
+            <li class="list-item-inline"><a class="link" href="">blogs</a></li>
+        </ul>
+    </nav>
     
-
-    <h1>this is the biggest heading</h1>
-    <h2>this is the second biggest heading</h2>
-
-    <p class="para">I am making a library which would hold all of my library.</p>
-    <hr>
-    <h2>@container</h2>
-    <div class="container-fluid">this is a fluid container and it will go till the end of the page.</div>
-    <h2>@container-center</h2>
-    <div class="container-center">this is a centered container and it will go till the end of the page.</div>
-    
-    <hr>
-    
-    <h2>@links</h2>
-    <a href="http://google.com">Primary link</a>
-    <a href="http://google.com">secondary link</a>
-    <hr>
-    <div>
-        here's my list
-        <h2> list</h2>
-        <h3>unordered list</h3>
-        <p>this list will not have bullets</p>
-
-        <ul class="non-bullet">
-            <li>item one</li>
-            <li>item two</li>
-            <li>item three</li>
-            <li>item four</li>
-      </ul >
-      <ul class="list-non-bullet">
-          <li class="list-item-inline">inline item one</li>
-          <li class="list-item-inline">inline item two</li>
-          <li class="list-item-inline">inline item three</li>
-      </ul>
-      <h2>@nav</h2>
-      <nav class="navigation container">
-          <div class="nav-brand">I am brand</div>
-          <ul class="list-non-bullet nav-pills">
-            <li class="list-item-inline"><a class="link link-active" href="">home</a></li>
-              <li class="list-item-inline">
-                  <a class="link" href="">products</a>
-              </li>
-              <li class="list-item-inline"><a class="link" href="">about</a></li>
-          </ul>
-      </nav>
-      <hr>
-      <h2>@header</h2>
       <header class="hero">
           <img class="hero-img" src="undraw_laravel_and_vue_-59-tp.svg" alt="">
           <h1 class="hero-heading">Wasim Saifi: <span class="heading-inverted"> web developer</span> </h1>
       </header>
-      
-      <hr>
-      
-      <section class="section">
+      <section class="sections">
           <div class="container container-center">
-            <h1>section</h1>
-            <h2>section</h2>
-            <h3>@white section</h3>
-            <P>We are an open community of developers building resources for a better web, regardless of brand, browser or platform. Anyone can contribute and each person who does makes us stronger. Together we can continue to drive innovation on the web to serve the greater good, it starts here, with you.</P>
+            
+            <h1>Technologies</h1>
+            <P>I am familier with HTML, CSS,Git, Javascript, NodeJS.</P>
           </div>
-        
-
-
-
-      </section>
-      <section class="section ow">
+          </section>
+          <a class="link link-primary" href="/projects.html">See projects</a>
+          <section class="sections">
           <div class="container container-center">
-            <h2>section</h2>
-            <h3>@off white section</h3>
-            <P>We are an open community of developers building resources for a better web, regardless of brand, browser or platform. Anyone can contribute and each person who does makes us stronger. Together we can continue to drive innovation on the web to serve the greater good, it starts here, with you.</P>
-          </div>
-        
+            
+            <h1>blogs</h1>
+            <P>I am working on some technical and non technical blogs. I like to document my journey during this process.</P>
+            <a class="link link-primary" href="/blogs.html">read blogs</a>
+            </div>
+          </section>
+          <br>
 
-
-
-      </section>
-      <footer>
-          <div>some small heading inside footer</div>
+          <footer class="footer">
+          
+          <div class="footer-header">social media presence</div>
+          <ul class="social-link list-non-bullet">
+            <li class="list-item-inline"><a class="link" href="https://github.com/Kwasim99"> github</a></li>
+            <li class="list-item-inline"><a class="link" href="/">twitter</a> </li>
+            <li class="list-item-inline"><a class=link href="/">linkedIn</a> </li>
+        </ul>
       </footer>
-      <ul>
-          <li>social one</li>
-          <li>social two</li>
-          <li>social three</li>
-      </ul>
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          
+    
 </body>
 </html>
